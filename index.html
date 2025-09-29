@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twilight NC - Professional Exterior Lighting</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for a modern, dark theme */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        
+        :root {
+            --primary-dark: #1f2937; /* Dark Slate */
+            --accent-gold: #fbbf24; /* Amber 400 */
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--primary-dark);
+            color: #e5e7eb; /* Light Gray Text */
+            scroll-behavior: smooth;
+        }
+
+        .section-heading {
+            color: var(--accent-gold);
+            text-shadow: 0 0 10px rgba(251, 191, 36, 0.4);
+        }
+
+        .cta-button {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(251, 191, 36, 0.4);
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(251, 191, 36, 0.6);
+        }
+        
+        /* Utility for simulating icons with SVG */
+        .icon {
+            display: inline-block;
+            width: 1.5em;
+            height: 1.5em;
+            vertical-align: middle;
+            stroke-width: 2;
+            stroke: currentColor;
+            fill: none;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-gray-900/95 backdrop-blur-sm shadow-xl">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="#hero" class="text-3xl font-bold text-yellow-400 tracking-wider">
+                Twilight <span class="text-white font-light">NC</span>
+            </a>
+            <div class="hidden md:flex space-x-8 text-lg font-medium">
+                <a href="#services" class="hover:text-yellow-400 transition duration-150">Services</a>
+                <a href="#portfolio" class="hover:text-yellow-400 transition duration-150">Portfolio</a>
+                <a href="#testimonials" class="hover:text-yellow-400 transition duration-150">Reviews</a>
+                <a href="#quote" class="hover:text-yellow-400 transition duration-150">Quote</a>
+            </div>
+            <a href="#quote" class="hidden md:block bg-yellow-400 text-gray-900 px-5 py-2 rounded-full font-semibold hover:bg-yellow-300 transition cta-button">
+                Get Started
+            </a>
+            
+            <!-- Mobile Menu Placeholder -->
+            <button class="md:hidden text-white focus:outline-none">
+                <svg class="icon w-6 h-6" viewBox="0 0 24 24">
+                    <path d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <!-- 1. Hero Section -->
+    <section id="hero" class="relative overflow-hidden pt-16 md:pt-24 pb-16">
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" 
+             style="background-image: url('https://placehold.co/1920x1080/000000/F5C95D?text=Stunning+Lit+Home+at+Night'); opacity: 0.5;">
+        </div>
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center py-20 md:py-32">
+            <h1 class="text-5xl md:text-7xl font-extrabold leading-tight text-white mb-6 animate-pulse">
+                Illuminate Your World. <span class="text-yellow-400">Transform Your Home.</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto">
+                Professional exterior lighting installation for houses, walkways, and landscapes in North Carolina. Enhance curb appeal, safety, and enjoyment.
+            </p>
+            <a href="#quote" class="cta-button bg-yellow-400 text-gray-900 text-xl font-bold px-10 py-4 rounded-full shadow-lg hover:bg-yellow-300 transform hover:scale-105 transition duration-300">
+                Get a Free Quote Today
+            </a>
+        </div>
+    </section>
+
+    <!-- 2. Services Section -->
+    <section id="services" class="py-16 md:py-24 bg-gray-800">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-center mb-12 section-heading">Our Lighting Expertise</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1: Architectural Lighting -->
+                <div class="p-6 bg-gray-900 rounded-xl shadow-2xl hover:bg-gray-700 transition duration-300 border border-gray-700">
+                    <svg class="icon w-10 h-10 text-yellow-400 mb-4" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5L12 2zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+                    <h3 class="text-2xl font-semibold text-white mb-3">Architectural Focus</h3>
+                    <p class="text-gray-400">Highlighting your home's unique features, stone work, and facade with precision up-lighting and washes.</p>
+                </div>
+                
+                <!-- Service 2: Pathway & Walkway -->
+                <div class="p-6 bg-gray-900 rounded-xl shadow-2xl hover:bg-gray-700 transition duration-300 border border-gray-700">
+                    <svg class="icon w-10 h-10 text-yellow-400 mb-4" viewBox="0 0 24 24"><path d="M10 2v20M14 2v20M18 6h-4M10 6H6M18 18h-4M10 18H6"></path></svg>
+                    <h3 class="text-2xl font-semibold text-white mb-3">Pathway Safety</h3>
+                    <p class="text-gray-400">Illuminating walkways, steps, and driveways to ensure safety and provide a welcoming glow.</p>
+                </div>
+                
+                <!-- Service 3: Landscape Lighting -->
+                <div class="p-6 bg-gray-900 rounded-xl shadow-2xl hover:bg-gray-700 transition duration-300 border border-gray-700">
+                    <svg class="icon w-10 h-10 text-yellow-400 mb-4" viewBox="0 0 24 24"><path d="M18 20V8m-8 4v8m4-4v8m-4-8L4 20M12 4l-3 3M18 4l-3 3"></path></svg>
+                    <h3 class="text-2xl font-semibold text-white mb-3">Landscape & Gardens</h3>
+                    <p class="text-gray-400">Bringing your mature trees, garden beds, and outdoor spaces to life after sunset with subtle accent lighting.</p>
+                </div>
+
+                <!-- Service 4: Maintenance & Repair -->
+                <div class="p-6 bg-gray-900 rounded-xl shadow-2xl hover:bg-gray-700 transition duration-300 border border-gray-700">
+                    <svg class="icon w-10 h-10 text-yellow-400 mb-4" viewBox="0 0 24 24"><path d="M14.7 6.3a2 2 0 0 1 0 2.8l-8.4 8.4a2 2 0 0 1-2.8 0L2.3 15.3a2 2 0 0 1 0-2.8l8.4-8.4a2 2 0 0 1 2.8 0z"></path><path d="M18 18l3-3M22 10l-3 3"></path></svg>
+                    <h3 class="text-2xl font-semibold text-white mb-3">Maintenance Support</h3>
+                    <p class="text-gray-400">Offering dependable maintenance, repair, and annual check-ups to keep your system shining bright.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Portfolio/Gallery Section -->
+    <section id="portfolio" class="py-16 md:py-24">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-center mb-12 section-heading">Our Recent Work</h2>
+            
+            <p class="text-center text-gray-400 max-w-3xl mx-auto mb-10">See the difference professional design makes. We specialize in creating custom lighting blueprints for every unique property.</p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Project 1 -->
+                <div class="group rounded-xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition duration-500 bg-gray-700">
+                    <img src="https://placehold.co/800x600/222222/F5C95D?text=After:+Walkway+Ambiance" class="w-full h-64 object-cover" alt="Beautifully lit walkway and steps">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-yellow-400">Walkway Ambiance</h3>
+                        <p class="text-sm text-gray-300 mt-1">Focused on safety and smooth flow for the entire property access.</p>
+                    </div>
+                </div>
+
+                <!-- Project 2: Before/After Concept -->
+                <div class="group rounded-xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition duration-500 bg-gray-700">
+                    <img src="https://placehold.co/800x600/222222/F5C95D?text=After:+Architectural+Focus" class="w-full h-64 object-cover" alt="Exterior lighting highlighting home architecture">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-yellow-400">Architectural Focus</h3>
+                        <p class="text-sm text-gray-300 mt-1">Dramatic up-lighting to showcase the front facade and entryway.</p>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="group rounded-xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition duration-500 bg-gray-700">
+                    <img src="https://placehold.co/800x600/222222/F5C95D?text=After:+Lush+Garden+Lit" class="w-full h-64 object-cover" alt="Garden lighting highlighting trees and plants">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-yellow-400">Lush Landscape</h3>
+                        <p class="text-sm text-gray-300 mt-1">Subtle, hidden fixtures bringing the backyard and garden to life.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#quote" class="cta-button bg-transparent border-2 border-yellow-400 text-yellow-400 px-8 py-3 rounded-full font-semibold hover:bg-yellow-400 hover:text-gray-900 transition duration-300">
+                    Discuss Your Vision
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Testimonials/Reviews Section -->
+    <section id="testimonials" class="py-16 md:py-24 bg-gray-900/50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-center mb-16 section-heading">What Our Clients Say</h2>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="p-8 bg-gray-800/80 rounded-2xl shadow-xl border-l-4 border-yellow-400">
+                    <p class="text-xl italic text-gray-300 mb-6">"Twilight NC transformed our property! The house looks elegant and the pathways feel so much safer. The entire process was professional and quick."</p>
+                    <p class="font-semibold text-white">- Sarah K., Raleigh</p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="p-8 bg-gray-800/80 rounded-2xl shadow-xl border-l-4 border-yellow-400">
+                    <p class="text-xl italic text-gray-300 mb-6">"Absolutely stunning work. They paid attention to every small detail in the landscape. It feels like a resort in our own backyard now. Highly recommend!"</p>
+                    <p class="font-semibold text-white">- James D., Chapel Hill</p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="p-8 bg-gray-800/80 rounded-2xl shadow-xl border-l-4 border-yellow-400">
+                    <p class="text-xl italic text-gray-300 mb-6">"We used them for architectural and holiday lighting. The team was fantastic, the results exceeded our expectations. The quote process was transparent and honest."</p>
+                    <p class="font-semibold text-white">- Laura M., Durham</p>
+                </div>
+            </div>
+            
+            <!-- Review Submission Area (Simple form) -->
+            <div class="mt-16 text-center max-w-3xl mx-auto p-8 bg-gray-800 rounded-xl shadow-2xl">
+                <h3 class="text-3xl font-bold text-yellow-400 mb-4">Leave Your Own Review</h3>
+                <form id="review-form">
+                    <textarea id="review-text" rows="3" class="w-full p-3 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:ring-yellow-400 focus:border-yellow-400 mb-4" placeholder="Share your experience here..."></textarea>
+                    <input type="text" id="review-name" class="w-full p-3 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:ring-yellow-400 focus:border-yellow-400 mb-4" placeholder="Your Name and Location (e.g., John D., Cary)">
+                    <button type="submit" class="cta-button bg-yellow-400 text-gray-900 font-bold px-8 py-3 rounded-full hover:bg-yellow-300 transition duration-300 w-full md:w-auto">
+                        Submit Review
+                    </button>
+                    <p id="review-message" class="text-green-400 mt-4 hidden">Thank you for your feedback!</p>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 5. Quote Request / Contact Form -->
+    <section id="quote" class="py-16 md:py-24">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-center mb-4 section-heading">Ready for a Transformation?</h2>
+            <p class="text-center text-xl text-gray-400 mb-10">Fill out the quick form below to schedule your FREE, no-obligation site assessment and design consultation.</p>
+
+            <form id="quote-form" class="p-8 bg-gray-800 rounded-xl shadow-2xl border border-gray-700">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-300 mb-2">Full Name</label>
+                        <input type="text" id="name" name="name" required class="w-full p-3 bg-gray-700 border border-gray-600 rounded-lg text-white focus:ring-yellow-400 focus:border-yellow-400">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-300 mb-2">Email Address</label>
+                        <input type="email" id="email" name="email" required class="w-full p-3 bg-gray-700 border border-gray-600 rounded-lg text-white focus:ring-yellow-400 focus:border-yellow-400">
+                    </div>
+                </div>
+
+                <div class="mb-6">
+                    <label for="phone" class="block text-sm font-medium text-gray-300 mb-2">Phone Number (Optional)</label>
+                    <input type="tel" id="phone" name="phone" class="w-full p-3 bg-gray-700 border border-gray-600 rounded-lg text-white focus:ring-yellow-400 focus:border-yellow-400">
+                </div>
+                
+                <!-- Mandatory Address Field -->
+                <div class="mb-6">
+                    <label for="address" class="block text-sm font-medium text-gray-300 mb-2 font-bold">Project Address (Required for Quote)</label>
+                    <input type="text" id="address" name="address" required class="w-full p-3 bg-gray-700 border-2 border-yellow-400 rounded-lg text-white placeholder-gray-400 focus:ring-yellow-400 focus:border-yellow-400" placeholder="e.g., 123 Main St, Raleigh, NC 27601">
+                </div>
+
+                <div class="mb-6">
+                    <label for="project-details" class="block text-sm font-medium text-gray-300 mb-2">Tell Us About Your Project</label>
+                    <textarea id="project-details" name="project-details" rows="4" class="w-full p-3 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:ring-yellow-400 focus:border-yellow-400" placeholder="e.g., I'm interested in lighting up my front yard trees and the front walkway."></textarea>
+                </div>
+
+                <button type="submit" class="cta-button w-full bg-yellow-400 text-gray-900 text-xl font-bold py-4 rounded-lg hover:bg-yellow-300 transform hover:scale-[1.01] transition duration-300">
+                    Submit for Free Site Assessment
+                </button>
+                <p id="quote-message" class="text-green-400 text-center mt-4 hidden">Thank you! We'll be in touch within 24 hours to schedule your consultation.</p>
+            </form>
+        </div>
+    </section>
+
+    <!-- 6. About Us & Footer -->
+    <footer class="bg-gray-900/95 border-t border-gray-700 mt-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                
+                <!-- About Company -->
+                <div>
+                    <h4 class="text-xl font-bold text-yellow-400 mb-4">Twilight NC</h4>
+                    <p class="text-gray-400 text-sm">Founded on a passion for design and quality, Twilight NC is committed to delivering custom, energy-efficient exterior lighting solutions across North Carolina. We believe lighting is an investment in your home's security and beauty.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-xl font-bold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#services" class="hover:text-yellow-400 transition">Our Services</a></li>
+                        <li><a href="#portfolio" class="hover:text-yellow-400 transition">Portfolio Gallery</a></li>
+                        <li><a href="#testimonials" class="hover:text-yellow-400 transition">Client Reviews</a></li>
+                        <li><a href="#quote" class="hover:text-yellow-400 transition">Get a Quote</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-xl font-bold text-white mb-4">Contact Us</h4>
+                    <p class="text-gray-400 space-y-2">
+                        <span class="block">Email: <a href="mailto:info@twilightnc.com" class="hover:text-yellow-400">info@twilightnc.com</a></span>
+                        <span class="block">Phone: <a href="tel:919-555-1234" class="hover:text-yellow-400">(919) 555-1234</a></span>
+                        <span class="block">Service Area: Raleigh, Durham, Chapel Hill & surrounding areas.</span>
+                    </p>
+                </div>
+                
+                <!-- Social Media -->
+                <div>
+                    <h4 class="text-xl font-bold text-white mb-4">Follow Us</h4>
+                    <div class="flex space-x-4 text-yellow-400">
+                        <!-- Placeholder for Social Icons -->
+                        <a href="#" class="hover:text-white transition" title="Facebook">
+                            <svg class="icon w-6 h-6" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                        <a href="#" class="hover:text-white transition" title="Instagram">
+                            <svg class="icon w-6 h-6" viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.5" y1="6.5" y2="6.5"></line></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 pt-8 border-t border-gray-700 text-center">
+                <p class="text-sm text-gray-500">&copy; 2025 Twilight NC. All rights reserved. | Designed for aesthetic and safety.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Form Submission & Smooth Scrolling -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const quoteForm = document.getElementById('quote-form');
+            const quoteMessage = document.getElementById('quote-message');
+            const reviewForm = document.getElementById('review-form');
+            const reviewMessage = document.getElementById('review-message');
+
+            // Handle Quote Form Submission
+            quoteForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Collect data (in a real app, this would be sent to a server/CRM)
+                const data = {
+                    name: document.getElementById('name').value,
+                    email: document.getElementById('email').value,
+                    phone: document.getElementById('phone').value,
+                    address: document.getElementById('address').value,
+                    details: document.getElementById('project-details').value
+                };
+                
+                console.log('Quote Request Submitted:', data);
+                
+                // Display success message and reset form
+                quoteMessage.classList.remove('hidden');
+                quoteForm.reset();
+                
+                // Hide message after 5 seconds
+                setTimeout(() => {
+                    quoteMessage.classList.add('hidden');
+                }, 5000);
+            });
+
+            // Handle Review Form Submission
+            reviewForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Collect data (in a real app, this would be sent to a server for moderation)
+                const data = {
+                    review: document.getElementById('review-text').value,
+                    name: document.getElementById('review-name').value
+                };
+                
+                console.log('Review Submitted:', data);
+
+                // Display success message and reset form
+                reviewMessage.classList.remove('hidden');
+                reviewForm.reset();
+                
+                // Hide message after 5 seconds
+                setTimeout(() => {
+                    reviewMessage.classList.add('hidden');
+                }, 5000);
+            });
+            
+            // Optional: Smooth scroll for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
